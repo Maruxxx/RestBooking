@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__image {
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner__text {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 30px;
+    padding: 10vh 12vh 10vh;
+    color: white;
+    position: absolute;
+    left: 50px;
+    width: 50vh;
+}
+
+.banner__text > h1 {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.banner__text > p {
+    margin-bottom: 20px;
+}
+
+
+.banner__text > button {
+    color: white;
+    background-color: #006aec;
+    text-transform: inherit;
+    font-family: Poppins;
+    font-size: 16px;
+}

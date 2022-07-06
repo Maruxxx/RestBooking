@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+.card__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 460px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-right: 50px;
+}
+
+.card__wrap:hover{
+    transform: scale(1.04)
+}
+
+.card__wrap > img {
+    object-fit: contain;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.card__wrap > h1 {
+    font-size: 20px;
+    margin: 4px 20px 4px;
+    font-family: Roboto;
+    margin-bottom: 0px;
+}
+
+.card__wrap > p {
+    font-size: 12px;
+    margin: 8px 20px 55px;
+}
+
+.card__wrap > h3 {
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 0;
+    left: 20px;
+    color: rgb(54, 54, 54);
+}
+.card__wrap > h3 > span{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 17px;
+    margin-bottom: 15px;
+    bottom: 0;
+}
+
+.rating > p{
+    font-size: 14px;
+}
