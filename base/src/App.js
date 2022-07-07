@@ -1,27 +1,34 @@
 import './App.css'
 import Header from './Components/Header'
 import Home from './Pages/Home'
+import Search from './Pages/Search'
+import { BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
+    
 
-      <Header />
-      <Home />
-      {/* Header == sticky for all pages */} 
+    
+    <BrowserRouter>
+      
+      <Header />  
 
-      {/* Home page */}
-          {/* Date Picker */}
-          {/* Banner */}
-          {/* Cards */}
+        <div className="App">
 
-      {/* Search page */}
-          {/* Breadcrumb */}
-          {/* Categories */}
-          {/* Horizontal cards */}
+        <Routes>
 
-      {/* Footer == sticky for all pages */}
-    </div>
+          <Route path='/search' element={<Search />} />
+
+          <Route path='/' element={<Home />} />
+            
+        </Routes>
+      
+        </div>
+
+      </BrowserRouter>
+
+      
+    
   );
 }
 

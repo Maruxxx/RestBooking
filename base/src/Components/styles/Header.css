@@ -23,6 +23,7 @@
 .logo{
     object-fit: contain;
     height: 45px;
+    cursor: pointer;
 }
 
 .header__mid{

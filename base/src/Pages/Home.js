@@ -3,10 +3,21 @@ import Banner from '../Components/Banner'
 import Card from '../Components/Card'
 import Footer from '../Components/Footer'
 import './styles/Home.css'
+import DatePickerComponent from '../Components/DatePicker';
+import DateRangeIcon from '@mui/icons-material/DateRange';
 
 function Home() {
+
+  const [clicked, setClicked] = React.useState(false)
+
   return (
     <div className='home'>
+      <div className='datepicker__logo'>
+        <DateRangeIcon onClick={() => setClicked(!clicked)} style={{ color: 'white'}} fontSize='large'/>
+        {clicked && (
+          <DatePickerComponent />
+        )}
+      </div>
       <Banner />
       <div className='info__cards1'>
         <Card 

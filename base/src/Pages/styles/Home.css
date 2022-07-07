@@ -1,3 +1,24 @@
+.home{
+    position: relative;
+}
+
+
+.datepicker__logo{
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    background-color: #074998;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    z-index: 3000;
+}
+
+.datepicker__logo:hover{
+    transform: scale(1.01);
+}
+
 .info__cards1 {
     display: flex;
     justify-content: center;
